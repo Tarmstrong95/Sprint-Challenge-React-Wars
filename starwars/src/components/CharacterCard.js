@@ -31,17 +31,3 @@ import Films from './films'
     )
 }
 export default CharacterCard;
-
-/* 
-name
-birth year
-eye color
-gender
-hair color
-height cm
-mass kg
-skin color
-species
-starships
-vehicles
-*/
