@@ -1,0 +1,11 @@
+.container{
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+li{
+    list-style-type: none;
+}
