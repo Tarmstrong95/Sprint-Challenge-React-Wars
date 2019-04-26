@@ -1,0 +1,25 @@
+.card-cont{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+.container{
+    background-color: rgba(255, 255, 255, 0.788);
+    margin: 10px;
+    width: 390px;
+    margin-top: 30px;
+    border-radius: 2px;
+}
+.container h1{
+    color: #443e3e;
+    border-bottom: 1px solid #443e3e;
+}
+
+li{
+    list-style-type: none;
+}
+.container p {
+    margin: auto;
+    padding: 10px;
+    color: #443e3e;
+}
