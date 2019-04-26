@@ -17,8 +17,8 @@ import Species from './species'
             <p><strong>Mass: </strong><br/>{props.characterInfo.mass}kg</p>
             <p><strong>Skin Color: </strong><br/>{props.characterInfo.skin_color}</p>
             <p><strong>Species: </strong><br/>{props.characterInfo.species.map((species, i) => <Species key={i} species={species}/>)}</p>
-            <p><strong>Starships: </strong><br/>{props.characterInfo.starships.map((ship, i) => <Starship key={i} ship={ship}/>)}</p>
-            <p><strong>Vehicles: </strong><br/>{props.characterInfo.vehicles.map((vehicle, i) => <Vehicle key={i} vehicle={vehicle}/>)}</p>
+            <Starship ship={props.characterInfo.starships}/>
+            <Vehicle vehicle={props.characterInfo.vehicles}/>
         </div>
     )
 }
