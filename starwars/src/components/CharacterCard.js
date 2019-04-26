@@ -6,19 +6,20 @@ import Species from './species'
 
 
  const CharacterCard = props => {
+     const {birth_year, eye_color, gender, hair_color, height, mass, skin_color, species, starships, vehicles} = props.characterInfo;
     return (
         <div className="container">
             <h1>{props.characterInfo.name}</h1>
-            <p><strong>Birth Year: </strong><br/>{props.characterInfo.birth_year}</p>
-            <p><strong>Eye Color: </strong><br/>{props.characterInfo.eye_color}</p>
-            <p><strong>Gender: </strong><br/>{props.characterInfo.gender}</p>
-            <p><strong>Hair Color: </strong><br/>{props.characterInfo.hair_color}</p>
-            <p><strong>Height: </strong><br/>{props.characterInfo.height}cm</p>
-            <p><strong>Mass: </strong><br/>{props.characterInfo.mass}kg</p>
-            <p><strong>Skin Color: </strong><br/>{props.characterInfo.skin_color}</p>
-            <p><strong>Species: </strong><br/>{props.characterInfo.species.map((species, i) => <Species key={i} species={species}/>)}</p>
-            <Starship ship={props.characterInfo.starships}/>
-            <Vehicle vehicle={props.characterInfo.vehicles}/>
+            <p><strong>Birth Year: </strong><br/>{birth_year}</p>
+            <p><strong>Eye Color: </strong><br/>{eye_color}</p>
+            <p><strong>Gender: </strong><br/>{gender}</p>
+            <p><strong>Hair Color: </strong><br/>{hair_color}</p>
+            <p><strong>Height: </strong><br/>{height}cm</p>
+            <p><strong>Mass: </strong><br/>{mass}kg</p>
+            <p><strong>Skin Color: </strong><br/>{skin_color}</p>
+            <p><strong>Species: </strong><br/>{species.map((species, i) => <Species key={i} species={species}/>)}</p>
+            <Starship ship={starships}/>
+            <Vehicle vehicle={vehicles}/>
         </div>
     )
 }
