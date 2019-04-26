@@ -2,13 +2,9 @@ import React from "react";
 import "./StarWars.css";
 
 class Species extends React.Component {
-  constructor(props) {
-    super(props);
-    this.props = props;
-    this.state = {
+    state = {
       species: []
     };
-  }
 
   componentDidMount() {
     this.getCharacters(this.props.species);

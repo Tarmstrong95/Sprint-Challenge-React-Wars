@@ -2,13 +2,10 @@ import React from "react";
 import "./StarWars.css";
 
 class Films extends React.Component {
-  constructor(props) {
-    super(props);
-    this.props = props;
-    this.state = {
+    state = {
       films: []
     };
-  }
+
 
   componentDidMount() {
     this.props.film.map(film => this.getCharacters(film));

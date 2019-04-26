@@ -2,13 +2,9 @@ import React from "react";
 import "./StarWars.css";
 
 class Vehicle extends React.Component {
-  constructor(props) {
-    super(props);
-    this.props = props;
-    this.state = {
+    state = {
       vehicles: []
     };
-  }
 
   componentDidMount() {
     this.props.vehicle.map(vehicle => this.getCharacters(vehicle));

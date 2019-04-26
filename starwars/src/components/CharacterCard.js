@@ -8,7 +8,20 @@ import Films from './films'
 
 
  const CharacterCard = props => {
-     const {birth_year, eye_color, gender, hair_color, height, mass, skin_color, species, starships, vehicles, homeworld, films} = props.characterInfo;
+
+     const {birth_year, 
+        eye_color, 
+        gender, 
+        hair_color, 
+        height, mass, 
+        skin_color, 
+        species, 
+        starships, 
+        vehicles, 
+        homeworld, 
+        films} 
+        = props.characterInfo;
+        
     return (
         <div className="container">
             <h1>{props.characterInfo.name}</h1>

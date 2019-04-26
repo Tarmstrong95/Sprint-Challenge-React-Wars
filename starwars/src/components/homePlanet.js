@@ -2,13 +2,9 @@ import React from "react";
 import "./StarWars.css";
 
 class Planet extends React.Component {
-  constructor(props) {
-    super(props);
-    this.props = props;
-    this.state = {
+    state = {
       planets: []
     };
-  }
 
   componentDidMount() {
     this.getCharacters(this.props.planet);
@@ -31,7 +27,7 @@ class Planet extends React.Component {
   render() {
     return (
       <p>
-        <strong>Species: </strong>
+        <strong>HomePlanet: </strong>
         <br />
         <li>{this.state.planets.name}</li>
       </p>

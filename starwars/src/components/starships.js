@@ -2,13 +2,10 @@ import React from "react";
 import "./StarWars.css";
 
 class Starship extends React.Component {
-  constructor(props) {
-    super(props);
-    this.props = props;
-    this.state = {
+    state = {
       starships: []
     };
-  }
+  
 
   componentDidMount() {
     this.props.ship.map(ship => this.getCharacters(ship));
